@@ -6,7 +6,7 @@
 parameters:
 - name: listOfStrings
   type: object
-  defalut:
+  default:
   - one
   - two
 
