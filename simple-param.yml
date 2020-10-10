@@ -1,6 +1,6 @@
 parameters:
-- name:yesNo
-  type:boolean
+- name: yesNo
+  type: boolean
   default: false
 
 steps:
