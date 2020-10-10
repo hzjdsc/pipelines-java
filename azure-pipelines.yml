@@ -20,7 +20,7 @@ pool:
   vmImage: $(imageName)
 
 steps:
-  - script: date
+  - bash: echo_date.sh
 # - task: Maven@3
 #   inputs:
 #     mavenPomFile: 'pom.xml'
