@@ -3,10 +3,13 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
-trigger:
-- master
+parameters:
+- name: listOfStrings
+  type: object
+  defalut:
+  - one
+  - two
 
-extends:
-  template: simple-param.yml
-  parameters:
-    yesNo: true
+steps:
+- ${{ each value1 in parameters.listOfStrings}}:
+  - script: echo ${{ value1 }}
