@@ -11,7 +11,7 @@ strategy:
 #     jdk10_linux:
 #       imageName: "ubuntu-16.04"
 #       jdk_version: "1.10"
-    jdk11_windows:
+    jdk11_mac:
       imageName: "macos-10.14"
       jdk_version: "1.11"
   maxParallel: 2
